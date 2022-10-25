@@ -34,6 +34,6 @@ function search {
     find . -name $1
 }
 
-function primary() {
+function workspace() {
     cd /run/media/wardvisual/Primary/ && cd "$@";
 }
