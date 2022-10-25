@@ -1,4 +1,4 @@
-![banner](https://github.com/wardvisual/dotfiles/blob/master/.assets/banner.jpg?raw=true)
+![banner](https://github.com/wardvisual/dotfiles/blob/arch/.assets/banner.jpg?raw=true)
 
 <h1 align="center">dotfiles ~/.*</h1>
 
@@ -14,7 +14,7 @@
 
 ## ArchLinux Distro
 
-![screenshot](https://github.com/wardvisual/dotfiles/blob/master/.assets/arch-info.jpg?raw=true)
+![screenshot](https://github.com/wardvisual/dotfiles/blob/arch/.assets/arch-info.jpg?raw=true)
 
 ## Contact
 
