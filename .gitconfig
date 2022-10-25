@@ -1,0 +1,15 @@
+# @wardvisual
+[user]
+	email = 64777371+wardvisual@users.noreply.github.com
+	name = wardvisual
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[core]
+	autocrlf = input
+[safe]
+	directory = /opt/flutter/
+	directory = /srv/http/
