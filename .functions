@@ -28,11 +28,13 @@ function system_info {
  }
 
 
-# SEarch file or directory from current directory
+# Search file or directory from current directory
 
 function search {
     find . -name $1
 }
+
+# Workspace directory
 
 function workspace() {
     cd /mnt/workspace && cd "$@";
