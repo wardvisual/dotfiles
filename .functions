@@ -1,9 +1,32 @@
-#wardvisual
-#!usr/bin/env bash
+#! /bin/bash
 
-# Create a new directory and enter it
-function mkd() {
-    mkdir -p "$@" && cd "$_";
+# Function to controll xampp without navigating on the path
+function xampp {
+  case $1 in
+    start)
+      sudo service mysql stop
+      sudo service nginx stop
+      sudo /opt/lampp/xampp start
+      ;;
+    stop)
+      sudo service mysql stop
+      sudo service nginx stop
+      sudo /opt/lampp/xampp stop
+      ;;
+    restart)
+      sudo /opt/lampp/xampp restart
+      ;;
+    *)
+      echo "Usage: xampp:start|stop|restart"
+      ;;
+  esac
+}
+
+
+# Function to update the system with ease (ubuntu)
+function update {
+  sudo apt update && sudo apt upgrade -y
+  echo "\nSystem Updated Successfully!\n"
 }
 
 
@@ -27,19 +50,12 @@ function system_info {
        echo "Free memory : $free kB"
  }
 
+ # Create a new directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$_";
+}
 
 # Search file or directory from current directory
 function search {
     find . -name $1
-}
-
-# Workspace directory
-function workspace() {
-    cd /mnt/workspace && cd "$@";
-}
-
-# Get the full path to a file
-fullpath() {
-    local -r full=$(perl -e 'use Cwd "abs_path";print abs_path(shift)' "$1")
-    echo "$full"
 }
