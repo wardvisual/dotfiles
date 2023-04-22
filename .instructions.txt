@@ -1,3 +1,0 @@
-pacman packages:
-- copy: pacman -Qqen > .pacman-pkg
-- install: pacman -S - < .pacman-pkg
