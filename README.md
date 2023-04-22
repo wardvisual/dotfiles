@@ -2,7 +2,7 @@
 
 <h1 align="center">dotfiles ~/.*</h1>
 
-<p align="center"> My Archlinux Dotfiles </p>
+<p align="center"> Personal Dotfiles </p>
 
 ## Read
 
@@ -11,10 +11,6 @@
 <!-- ```bash
 
 ``` -->
-
-## ArchLinux Distro
-
-![screenshot](https://github.com/wardvisual/dotfiles/blob/arch/.assets/arch-info.jpg?raw=true)
 
 ## Contact
 
